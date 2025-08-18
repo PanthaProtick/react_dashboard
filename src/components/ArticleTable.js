@@ -3,29 +3,33 @@ import { Table, Badge, Pagination } from "react-bootstrap";
 
 const articles = [
   {
-    title: "The Art of Storytelling: A Guide to Captivating Your Audience",
+    title: "Unlocking Creativity: Writing Beyond the Ordinary",
     status: "Published",
-    edited: "2 days ago",
+    edited: "3 days ago",
   },
   {
-    title: "Crafting Compelling Characters: A Step-by-Step Approach",
+    title: "Designing Strong Protagonists: A Beginner’s Guide",
     status: "Draft",
     edited: "1 week ago",
   },
   {
-    title:
-      "Mastering Dialogue in Fiction: Techniques for Realistic Conversations",
+    title: "Balancing Plot and Emotion in Modern Storytelling",
     status: "Published",
     edited: "2 weeks ago",
+  },
+  {
+    title: "The Power of Visual Imagination in Writing",
+    status: "Draft",
+    edited: "1 month ago",
   },
 ];
 
 function ArticleTable() {
   return (
-    <div className="bg-dark p-4 rounded shadow-lg">
-      <h4 className="mb-4 fw-bold">📄 My Articles</h4>
-      <Table hover variant="dark" className="align-middle rounded">
-        <thead className="table-secondary text-dark">
+    <div className="bg-white p-4 rounded shadow-sm">
+      <h4 className="mb-4 fw-bold text-dark">📄 My Articles</h4>
+      <Table hover responsive className="align-middle">
+        <thead className="table-light">
           <tr>
             <th>Title</th>
             <th>Status</th>

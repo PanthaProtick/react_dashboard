@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="d-flex">
         <Sidebar />
-        <div className="flex-grow-1 bg-dark text-light min-vh-100">
+        <div className="flex-grow-1 bg-light min-vh-100">
           <TopNavbar />
           <div className="p-4">
             <Routes>

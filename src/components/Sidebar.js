@@ -5,10 +5,10 @@ import { List } from "react-bootstrap-icons";
 function Sidebar() {
   return (
     <div
-      className="bg-dark text-light p-3 d-flex flex-column align-items-center shadow"
-      style={{ width: "70px", minHeight: "100vh" }}
+      className="bg-white border-end p-3 d-flex flex-column align-items-center shadow-sm"
+      style={{ width: "80px", minHeight: "100vh" }}
     >
-      {/* Profile Picture Link */}
+      {/* Profile Picture */}
       <NavLink
         to="/profile"
         className={({ isActive }) =>
@@ -20,16 +20,15 @@ function Sidebar() {
         <img
           src="gengar.jpeg"
           alt="Profile"
-          className="rounded-circle shadow"
-          style={{ width: "40px", height: "40px", objectFit: "cover" }}
+          className="rounded-circle"
+          style={{ width: "45px", height: "45px", objectFit: "cover" }}
         />
       </NavLink>
 
-      {/* Articles Link */}
       <NavLink
         to="/"
         className={({ isActive }) =>
-          `text-decoration-none ${isActive ? "text-primary" : "text-light"}`
+          `text-decoration-none ${isActive ? "text-primary" : "text-secondary"}`
         }
       >
         <List size={28} />
